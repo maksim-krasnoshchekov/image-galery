@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header {
+    max-width: 1280px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+}
+.header__logo-icon {
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+}
+.header__logo-icon path {
+    fill: orange;
+}
+.header__title {
+    color: white;
+}
+.header__search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header__search {
+    width: 350px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+}
+.header__search-icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+}
+.header__search-icon path{
+    transition: all 0.4s;
+    fill: black;
+}
+.header__search-icon:hover path{
+    fill: orange;
+}
+.header__search::placeholder {
+    font-size: 1rem;
+}
+.line {
+    height: 5px;
+    background-color: orange;
+}
+.main {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main__image {
+    margin-top: 15px;
+    width: 380px;
+    height: 214px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__icon-github {
+    width: 30px;
+    height: 30px;
+
+}
+.footer__icon-github path {
+    fill: white;
+}
+.footer__year {
+    color: white;
+}
+.footer__rsschool-icon {
+    height: 30px;
+    filter: invert(1);
+}
